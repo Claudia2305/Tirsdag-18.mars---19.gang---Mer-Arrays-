@@ -77,5 +77,14 @@ pushButton.addEventListener('click', function () {
   console.log(handleliste);
 
   const displayOutput = document.querySelector("#displayOutput");
-  // displayOutput.textContent = userInput;
+   displayOutput.textContent = handleliste;
 });
+
+const popButton = document.querySelector('#popButton');
+
+popButton.addEventListener('click',function () {
+  handleliste.pop();
+ 
+  const displayOutput = document.querySelector("#displayOutput");
+  displayOutput.textContent = handleliste;
+})
