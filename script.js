@@ -57,6 +57,12 @@ console.log(onlineStore[0].inStock);
 //
 
 const handlesliste = [];
+handlesliste.push("Melk");
+handlesliste.push("Smør");
+handlesliste.push("Egg");
+handlesliste.push("Sukker");
+
+console.log(handleliste);
 
 const pushButton = document.querySelector('#pushButton');
 
