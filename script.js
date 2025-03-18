@@ -56,16 +56,24 @@ console.log(onlineStore[0].inStock);
 //
 //
 
-const handlesliste = [];
-handlesliste.push("Melk");
-handlesliste.push("Smør");
-handlesliste.push("Egg");
-handlesliste.push("Sukker");
+const handleliste = [];
+handleliste.push("Melk");
+handleliste.push("Smør");
+handleliste.push("Egg");
+handleliste.push("Sukker");
 
 console.log(handleliste);
+
+// Oppgave 1: Bruk variabelen handleliste og legg til 4 verdier med .push()-metoden //
 
 const pushButton = document.querySelector('#pushButton');
 
 pushButton.addEventListener('click', function () {
   console.log('Knapp er trykket!');
+
+  const userInput = document.querySelector("#userInput").value;
+  console.log(userInput);
+
+  const displayOutput = document.querySelector("#displayOutput");
+  displayOutput.textContent = userInput;
 });
