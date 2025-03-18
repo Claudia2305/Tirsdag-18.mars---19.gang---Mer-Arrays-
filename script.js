@@ -62,7 +62,7 @@ handleliste.push("Smør");
 handleliste.push("Egg");
 handleliste.push("Sukker");
 
-console.log(handleliste);
+
 
 // Oppgave 1: Bruk variabelen handleliste og legg til 4 verdier med .push()-metoden //
 
@@ -73,7 +73,9 @@ pushButton.addEventListener('click', function () {
 
   const userInput = document.querySelector("#userInput").value;
   console.log(userInput);
+  handleliste.push(userInput)
+  console.log(handleliste);
 
   const displayOutput = document.querySelector("#displayOutput");
-  displayOutput.textContent = userInput;
+  // displayOutput.textContent = userInput;
 });
